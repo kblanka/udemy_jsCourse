@@ -15,12 +15,12 @@ var budgetController = (function() {
 
     var data = {
         allItems: {  
-            expenses: [],
-            incomes: []
+            exp: [],
+            inc: []
         },
         totals: {
-            expenses: 0,
-            incomes: 0
+            exp: 0,
+            inc: 0
         }
     };
 
@@ -30,7 +30,7 @@ var budgetController = (function() {
 
             //Create new ID
             if (data.allItems[type].length > 0) {
-                ID = data.allItems[type][data.allItems[type].length-1].id + 1;
+                ID = data.allItems[type][data.allItems[type].length - 1].id + 1;
             } else {
                 ID = 0;
             }
