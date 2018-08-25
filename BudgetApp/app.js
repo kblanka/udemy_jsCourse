@@ -100,7 +100,7 @@ var UIController = (function() {
     }
 
     return {
-        getInput: function(){
+        getInput : function(){
             return {
                 type: document.querySelector(DOMstrings.inputType).value, //"inc or "exp"
                 description: document.querySelector(DOMstrings.inputDescription).value,
@@ -141,6 +141,11 @@ var UIController = (function() {
             fieldsArr[0].focus();
         },
 
+        displayBudget: function(obj) {
+
+
+        },
+        
         getDomstrings: function(){
             return DOMstrings;
         }
